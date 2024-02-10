@@ -57,7 +57,7 @@ class IdleState extends State {
             this.stateMachine.transition('hurt')
             return
         }
-
+        
         // circle attack if f key
         if(Phaser.Input.Keyboard.JustDown(FKey))
         {
@@ -98,6 +98,7 @@ class MoveState extends State {
             return
         }
 
+        
         // circle attack if f key
         if(Phaser.Input.Keyboard.JustDown(FKey))
         {
@@ -211,8 +212,8 @@ class CircularState extends State
     {
         hero.setVelocity(0)
         hero.anims.play('circular-attack').once('animationcomplete', ()=>{
+            scene.cameras.main.shake(100, 0.05) 
             this.stateMachine.transition('idle')
-            scene.cameras.main.shake(10,10,) 
         })
         
     }

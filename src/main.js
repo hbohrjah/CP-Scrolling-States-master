@@ -1,6 +1,6 @@
 // Code Practice: Scrolling States
-// Name:
-// Date: 
+// Name: Handrei Bohrjah
+// Date: 2/9/2024
 
 'use strict'
 
